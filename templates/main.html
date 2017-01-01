@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link href="{ url_for('static', filename='main.css') }" rel="stylesheet">
+<link href="{{ url_for('static', filename='main.css') }}" rel="stylesheet">
 <!--<link rel="stylesheet" type="css/txt" href="static/main.css">--> 
-	<a href="http://127.0.0.1:5000/home"><button type="button" ="button">HOME</button></a>
-	<a href="http://127.0.0.1:5000/resume"><button type="button">RESUME</button></a>
-	<a href="http://127.0.0.1:5000/blog"><button type="button">BLOG</button></a>
+	<a href={{ url_for('home') }}><button type="button" ="button">HOME</button></a>
+	<a href={{ url_for('resume') }}><button type="button">RESUME</button></a>
+	<a href={{ url_for('blog') }}><button type="button">BLOG</button></a>
 	<title>MAIN PAGE</title>
 </head>
 <body style="background-color: blue;">
